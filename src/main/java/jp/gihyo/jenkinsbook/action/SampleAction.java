@@ -19,9 +19,11 @@ public class SampleAction {
      * Last name of the user.
      */
     private String lastName;
-    
-    public static final int pm_hour = 12;
-    
+    /**
+     * PM of hour.
+     */
+    public static final int PM_OF_HOUR = 12;
+
     /**
      * Constructor of SampleAction.
      */
@@ -70,11 +72,11 @@ public class SampleAction {
         //Select the greeting message according to the time
         Calendar calendar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        if (hour < pm_hour){
-        	dto.setMessage("Good morning");
+        if(hour < PM_OF_HOUR){
+            dto.setMessage("Good morning");
         }
         else{
-        	dto.setMessage("Good afternoon");
+            dto.setMessage("Good afternoon");
         }
 
         HttpSession session = request.getSession(true);
