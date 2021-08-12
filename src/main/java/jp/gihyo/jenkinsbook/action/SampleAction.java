@@ -75,7 +75,7 @@ public class SampleAction {
         if (hour < PM_OF_HOUR) {
              dto.setMessage("Good morning");
         }
-        else {
+        if (hour >= PM_OF_HOUR) {
              dto.setMessage("Good afternoon");
         }
 
