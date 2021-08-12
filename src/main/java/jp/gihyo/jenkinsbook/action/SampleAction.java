@@ -74,7 +74,8 @@ public class SampleAction {
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         if (hour < PM_OF_HOUR) {
              dto.setMessage("Good morning");
-        }else{
+        }
+        else {
              dto.setMessage("Good afternoon");
         }
 
