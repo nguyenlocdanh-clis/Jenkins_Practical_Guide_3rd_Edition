@@ -12,7 +12,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 group = 'jp.gihyo.jenkinsbook'
 version = '1.0.0'
 ext {
-    artifactId = 'sampleproject'
+    artifactId = 'JenkinsJOB'
 }
 
 repositories {
@@ -56,5 +56,5 @@ war {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.5'
+    gradleVersion = '7.2'
 }
